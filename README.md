@@ -127,16 +127,16 @@ monolog:
     handlers:
         main:
             type:         fingers_crossed # or buffer
-            level:        error
+            action_level: error
             handler:      lexik_monolog_browser
         app:
             type:         buffer
-            action_level: info
+            level:        info
             channels:     app
             handler:      lexik_monolog_browser
         deprecation:
             type:         buffer
-            action_level: warning
+            level:        warning
             channels:     deprecation
             handler:      lexik_monolog_browser
         lexik_monolog_browser:
